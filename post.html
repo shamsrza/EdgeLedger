@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 23 2020
+            </p>
+            <div><img src="image_resources/blog/blog1.jpg" alt=""></div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem consectetur iure placeat
+                    doloribus sapiente, debitis possimus quidem neque aliquam. Soluta numquam, excepturi placeat error
+                    ab neque velit nobis vero?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, expedita voluptas laboriosam fugiat
+                    hic eos accusamus blanditiis incidunt voluptatibus est eaque accusantium. Accusamus, voluptatem
+                    ipsam illum, dolor unde est quod laborum a quia illo perspiciatis minus provident corrupti eveniet
+                    hic eum sit ipsa fugit similique eaque distinctio, quasi soluta? Ex magnam, itaque numquam vero sunt
+                    perferendis ea sequi! Perferendis, ut?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis expedita quia a
+                    repudiandae, facere esse, rem unde quis modi quaerat nesciunt, alias cumque sunt inventore dolorum
+                    aliquid? Vero aspernatur voluptates reprehenderit commodi hic eos fuga, minima et laudantium
+                    quisquam, ab magnam provident distinctio voluptate tempore beatae! At, fugiat incidunt!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quia, placeat ab aspernatur aliquam
+                    deleniti fugiat iure culpa unde, temporibus reprehenderit ullam non expedita totam laboriosam
+                    necessitatibus, mollitia architecto numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste repudiandae officia culpa quidem
+                    aperiam illo mollitia dolor perferendis nesciunt rem, praesentium, dignissimos aut eius, atque
+                    tenetur vel pariatur sunt nostrum voluptate exercitationem error tempora facilis quisquam optio!
+                    Sint vero rerum repellendus repellat dolorum qui! Molestiae perferendis quia laboriosam eveniet
+                    dignissimos sunt vitae aliquam nihil labore, sit aperiam tenetur architecto nostrum accusantium?
+                    Explicabo maiores, molestiae accusamus delectus corrupti quo enim culpa esse aut autem sint
+                    repellendus id voluptas, vitae repudiandae illo magni ex nulla quod sed. Atque, aliquid. Ullam
+                    incidunt vitae adipisci labore commodi distinctio praesentium. Voluptatibus velit minima voluptas
+                    perspiciatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit commodi dolores ullam nemo omnis
+                    reprehenderit tenetur odio, neque accusantium. Vel assumenda, consequatur aspernatur, ab quae
+                    ratione quis error molestiae rerum exercitationem natus. Sequi omnis magni at amet a delectus iste
+                    soluta asperiores deleniti! Officiis, optio deleniti. Amet magni, doloribus perferendis at non
+                    placeat repellendus ullam mollitia voluptatum a assumenda blanditiis, modi qui magnam libero numquam
+                    ad debitis consequatur animi obcaecati nobis sit unde aut ipsa. Nesciunt iste, esse dolorem modi,
+                    sit cumque sed magnam soluta earum ab eius alias quo molestiae deserunt eligendi voluptate. Minus
+                    officia labore aut sed esse provident mollitia expedita, eveniet voluptatem dolorum corrupti! Quas,
+                    enim sapiente est voluptates ipsam tempora ab nostrum culpa dolor? Nisi, quas omnis! Minima
+                    temporibus ipsum recusandae eum? Enim pariatur voluptatem vitae iste cumque sapiente tenetur atque
+                    tempore eos inventore alias, magni amet a cupiditate error laborum doloremque nobis nemo nam.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+
+    <!-- JS elements -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+
+
+        // Smooth Scrolling
+        $('#navbar a, .btn').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
+
+    </script>
+</body>
+
+</html>
